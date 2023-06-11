@@ -1,0 +1,39 @@
+.delete-article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 50px;
+  color: #333;
+}
+
+.article-item {
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.article-item:hover {
+  background-color: #e1e1e1;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}

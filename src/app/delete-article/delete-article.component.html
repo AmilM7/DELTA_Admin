@@ -1,0 +1,8 @@
+<div class="delete-article-container">
+  <h2>Please select which article you want to delete</h2>
+  <div class="article-item" *ngFor="let article of articles | async" (click)="deleteArticle(article.id)">
+    <h3>{{ article.heading }}</h3>
+    <p>{{ article.description }}</p>
+    <p> ID: {{ article.id }}</p>
+  </div>
+</div>
