@@ -1,43 +1,81 @@
 /* login.component.css */
+.login-page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/Backgrounds/white-texture.jpg");
+  background-size: cover;
+}
+
 .login-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  max-width: 40%;
+  padding: 5% 20%;
+  border-radius: 20px;
+  background-color:rgba(225,220,238,0.7) ;
+  backdrop-filter: blur(5px);
+}
+
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rebeccapurple;
+  margin-bottom: 2%;
+}
+
+hr{
+  margin-bottom: 5%;
+  border: 1px solid mediumpurple;
+  width: 450px;
+}
+
+label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rebeccapurple;
+  margin-right: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="password"] {
   width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid mediumpurple;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: mediumpurple;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: .2s ease-in;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: rebeccapurple;
 }
 
-.error-message {
+.error-message{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
   color: red;
-  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
