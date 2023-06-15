@@ -1,0 +1,41 @@
+<div class="update-specific-article-page">
+  <div class="update-specific-article-container">
+    <div class="article-item" *ngFor="let articlen of articles | async">
+        <div *ngIf="articlen.id ==id">
+            <h2>You want to edit the article with ID: {{articlen.id}}</h2>
+            <hr>
+            <form  (ngSubmit)="submitForm()" >
+                <div class="form-group">
+                  <label for="heading">Heading</label>
+                  <input type="text" id="heading" name="heading" placeholder="{{articlen.heading}}" [(ngModel)]="article.heading" required>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <input type="text" id="description" name="description" placeholder="{{articlen.description}}" [(ngModel)]="article.description" required>
+                </div>
+                <div class="form-group">
+                  <label for="content">Content</label>
+                  <textarea id="content" name="content" placeholder="{{articlen.content}}" [(ngModel)]="article.content" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="trending">Trending</label>
+                  <input type="checkbox" id="trending" name="trending" placeholder="{{articlen.trending}}" [(ngModel)]="article.trending">
+                </div>
+                <div class="form-group">
+                  <label for="category">Category</label>
+                  <select id="category" name="category" [(ngModel)]="article.category" required>
+                    <option value="Sport">Sport</option>
+                    <option value="Business">Business</option>
+                    <option value="Education">Education</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Health">Health</option>
+                  </select>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="update-article-container">
+    <h2>Please select which article you want to update</h2>
+    <hr>
+    <div class="article-item" *ngFor="let article of articles | async" (click)="selectArticle(article.id)">
+      <p> ID: {{ article.id }}</p>
+      <h3>{{ article.heading }}</h3>
+      <p>{{ article.description }}</p>
+    </div>
+  </div>
