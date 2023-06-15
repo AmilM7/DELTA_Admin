@@ -14,7 +14,7 @@ export class DashboardComponent {
   }
 
   updateArticle() {
-    // Implement your logic for updating an article here -- Irfan
+    this.router.navigate(['/updateArticle'])
   }
 
   deleteArticle() {

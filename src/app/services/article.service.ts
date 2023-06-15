@@ -19,8 +19,16 @@ export class AdminService {
     return this.http.get<article[]>(this.baseUrl);
   }
 
+  public getArticle(id: number): Observable<article> {
+    return this.http.get<article>(`${this.baseUrl}/${id}`)
+  }
+
   public deleteArticle(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`)
+  }
+
+  public updateArticle(Article: article, id: number): Observable<article>{
+    return this.http.put<article>(`${this.baseUrl}/${id}`, Article);
   }
 
 }

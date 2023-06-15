@@ -11,6 +11,8 @@ import { AddArticleComponent } from './add-article/add-article.component';
 import { DeleteArticleComponent } from './delete-article/delete-article.component';
 import {AdminService} from "./services/article.service";
 import { SucessfulRequestComponent } from './sucessful-request/sucessful-request.component';
+import { UpdateArticleComponent } from './update-article/update-article.component';
+import { UpdateSpecificArticleComponent } from './update-specific-article/update-specific-article.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { SucessfulRequestComponent } from './sucessful-request/sucessful-request
     AddArticleComponent,
     DeleteArticleComponent,
     SucessfulRequestComponent,
+    UpdateArticleComponent,
+    UpdateSpecificArticleComponent,
   ],
   imports: [
     BrowserModule,
