@@ -26,7 +26,6 @@ To install and run this project locally, follow these steps:
 In order to start the application, a back-end API is required. For our case, the API was developed using Spring Boot and deployed on Heroku.
 Back-end link: https://github.com/marslanagic/applied-programming-backend
 
-### The backend server will be running at http://localhost:8080.   
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
