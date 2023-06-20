@@ -20,17 +20,11 @@ To install and run this project locally, follow these steps:
 `ng serve`   
 
 ### The Angular application will be accessible at http://localhost:4200.   
- 
-2. Backend (Java Spring):   
 
-- Navigate to the backend directory:   
-`cd DELTA_Admin/backend`   
+## Note
 
-- Build the application:   
-`./mvnw clean package`   
-
-- Start the Spring Boot application:   
-`./mvnw spring-boot:run`   
+In order to start the application, a back-end API is required. For our case, the API was developed using Spring Boot and deployed on Heroku.
+Back-end link: https://github.com/marslanagic/applied-programming-backend
 
 ### The backend server will be running at http://localhost:8080.   
 
