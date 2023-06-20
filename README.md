@@ -1,6 +1,7 @@
 # DELTA_Admin
 
-## Description: This is a README file for the Expo React Native application project.
+## Description: This is a README file for the Angular project.
+DELTA_Admin is a web application that serves as an extension to the DELTA mobile application (https://github.com/AmilM7/DELTA), it is developed using Angular for frontend and Java Spring for backend. DELTA_Admin gives ability to the admin to create new posts (news articles), edit them or delete already existing ones.
 
 ### Installation
 To install and run this project locally, follow these steps:
